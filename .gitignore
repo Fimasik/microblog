@@ -1,0 +1,37 @@
+# Logs and databases #
+######################
+*.log
+
+# OS generated files #
+######################
+*.DS_*
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Python no needed files #
+######################
+__pycache__
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+*.py[co]
+venv
+*.pyc
+build
+
+
+# Transliteration #
+######################
+*.pot
+
