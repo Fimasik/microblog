@@ -43,4 +43,5 @@ build
 # Other #
 ######################
 *.env
+.env
 environment.txt
