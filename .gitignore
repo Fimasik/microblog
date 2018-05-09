@@ -33,5 +33,14 @@ build
 
 # Transliteration #
 ######################
-*.pot
+*.mo
 
+
+# DB files #
+######################
+*.db
+
+# Other #
+######################
+*.env
+environment.txt
