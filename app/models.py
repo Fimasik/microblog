@@ -28,6 +28,7 @@ class User(UserMixin, db.Model):
         primaryjoin=(followers.c.follower_id == id),
         secondaryjoin=(followers.c.followed_id == id),
         backref=db.backref('followers', lazy='dynamic'), lazy='dynamic')
+    __searchable__ = ['about_me', 'username']
 
     def __repr__(self):
         return '<User {}>'.format(self.username)
@@ -89,6 +90,7 @@ class Post(db.Model):
     timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
     language = db.Column(db.String(5))
+    __searchable__ = ['body', 'user_id']
 
     def __repr__(self):
         return '<Post {}>'.format(self.body)
