@@ -47,6 +47,11 @@ class SearchableMixin(object):
             remove_from_index(cls.__tablename__, obj)
         session._changes = None
 
+    @classmethod
+    def reindex(cls):
+        for obj in cls.query:
+            add_to_index(cls.__tablename__, obj)
+
 
 class User(UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
