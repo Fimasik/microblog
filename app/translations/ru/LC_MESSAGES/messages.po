@@ -7,20 +7,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-05-09 18:06+0300\n"
+"POT-Creation-Date: 2018-05-30 19:05+0300\n"
 "PO-Revision-Date: 2018-05-09 18:10+0300\n"
 "Last-Translator: \n"
 "Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.3\n"
-"X-Generator: Poedit 2.0.7\n"
 
-#: app/__init__.py:18
+#: app/__init__.py:20
 msgid "Please log in to access this page."
 msgstr "Пожалуйста, войдите в систему чтобы просматривать сообщения."
 
@@ -100,7 +99,7 @@ msgstr "Ваш пароль был сброшен."
 msgid "About me"
 msgstr "Обо мне"
 
-#: app/main/forms.py:13 app/main/forms.py:28
+#: app/main/forms.py:13 app/main/forms.py:28 app/main/forms.py:45
 msgid "Submit"
 msgstr "Отправить"
 
@@ -108,48 +107,64 @@ msgstr "Отправить"
 msgid "Say something"
 msgstr "Напишите что-нибудь"
 
-#: app/main/routes.py:35
+#: app/main/forms.py:32 app/main/routes.py:154
+msgid "Search"
+msgstr ""
+
+#: app/main/forms.py:43
+msgid "Message"
+msgstr ""
+
+#: app/main/routes.py:41
 msgid "Your post is now live!"
 msgstr "Ваше сообщение добавлено в систему!"
 
-#: app/main/routes.py:44
+#: app/main/routes.py:50
 msgid "Home"
 msgstr "Домой"
 
-#: app/main/routes.py:59
+#: app/main/routes.py:65
 msgid "Explore"
 msgstr "Обозреватель"
 
-#: app/main/routes.py:87
+#: app/main/routes.py:93
 msgid "Your changes have been saved."
 msgstr "Ваши изменения были сохранены."
 
-#: app/main/routes.py:92
+#: app/main/routes.py:98
 msgid "Edit Profile"
 msgstr "Редактировать профиль"
 
-#: app/main/routes.py:101 app/main/routes.py:117
+#: app/main/routes.py:107 app/main/routes.py:123
 #, python-format
 msgid "User %(username)s not found."
 msgstr "Пользователь %(username)s не найден."
 
-#: app/main/routes.py:104
+#: app/main/routes.py:110
 msgid "You cannot follow yourself!"
 msgstr "Вы не можете подписаться на самого себя!"
 
-#: app/main/routes.py:108
+#: app/main/routes.py:114
 #, python-format
 msgid "You are following %(username)s!"
 msgstr "Вы подписаны на %(username)s!"
 
-#: app/main/routes.py:120
+#: app/main/routes.py:126
 msgid "You cannot unfollow yourself!"
 msgstr "Вы не можете отписаться от себя!"
 
-#: app/main/routes.py:124
+#: app/main/routes.py:130
 #, python-format
 msgid "You are not following %(username)s."
 msgstr "Вы не подписаны на %(username)s."
+
+#: app/main/routes.py:175
+msgid "Your message has been sent."
+msgstr ""
+
+#: app/main/routes.py:177
+msgid "Send Message"
+msgstr ""
 
 #~ msgid "You are following %(username)s."
 #~ msgstr "Вы подписаны на %(username)s."
@@ -165,8 +180,8 @@ msgstr "Вы не подписаны на %(username)s."
 
 #~ msgid "The administrator has been notified. Sorry for the inconvenience!"
 #~ msgstr ""
-#~ "Администратор уже уведомлён о произошедшем. Просим прощения за "
-#~ "неудобство!"
+#~ "Администратор уже уведомлён о произошедшем."
+#~ " Просим прощения за неудобство!"
 
 #~ msgid "%(username)s said %(when)s:"
 #~ msgstr "%(username)s сказал %(when)s:"
@@ -188,3 +203,4 @@ msgstr "Вы не подписаны на %(username)s."
 
 #~ msgid "Hi, %(username)s!"
 #~ msgstr "Привет, %(username)s!"
+
