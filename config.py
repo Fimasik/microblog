@@ -15,8 +15,9 @@ class Config(object):
     MAIL_USE_TLS = os.environ.get('MAIL_USE_TLS') is not None
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
-    ADMINS = ['']
+    ADMINS = ['fimasik@gmail.com']
     POSTS_PER_PAGE = 25
     LANGUAGES = ['en', 'ru']
     YD_TRANSLATOR_KEY = os.environ.get('YD_TRANSLATOR_KEY')
     ELASTICSEARCH_URL = os.environ.get('ELASTICSEARCH_URL')
+    REDIS_URL = os.environ.get('REDIS_URL') or 'redis://'
